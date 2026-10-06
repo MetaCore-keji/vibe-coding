@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="vibe-coding-style.css">
+<title>Vibe Coding 氛围编程落地页</title>
+<meta name="description" content="用 AI + 组件库 + 动效快速构建高颜值网站：Vibe Coding 方法论、六大资源工具箱与四步工作流">
+<script src="vibe-coding-script.js" defer></script>
+</head>
+<body>
+
+<!-- SECTION: ambient layers -->
+<div class="ambient" aria-hidden="true">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- SECTION: nav -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#hero"><i></i>Vibe Coding</a>
+    <nav class="nav-links" id="navLinks" aria-label="页面导航">
+      <a href="#concept">概念</a>
+      <a href="#workflow">工作流</a>
+      <a href="#toolbox">工具箱</a>
+      <a href="#stack">技术栈</a>
+      <a href="#prompts">提示词</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- SECTION: hero -->
+<section class="hero" id="hero">
+  <div class="wrap">
+    <span class="eyebrow">AI CODING WORKFLOW · <b>先描述，再生成，再调氛围</b></span>
+    <h1 class="type-row"><span id="typed"></span><span class="caret" id="caret"></span></h1>
+    <p class="hero-sub">用 <strong>AI + 组件库 + 动效</strong> 快速构建高颜值网站。这一页本身就是示范：深色氛围底、玻璃拟态卡片、渐变打字标题、滚动渐显——全部由自然语言描述意图后生成。</p>
+    <div class="chips">
+      <span class="chip on">glassmorphism</span>
+      <span class="chip on">dark mode</span>
+      <span class="chip on">gradient</span>
+      <span class="chip on">微交互</span>
+      <span class="chip">Anime.js</span>
+      <span class="chip">React Bits</span>
+      <span class="chip">Aceternity UI</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn p" href="#toolbox" data-primary-action>看六大资源工具箱 →</a>
+      <a class="btn g" href="#workflow">四步工作流</a>
+    </div>
+    <div class="scroll-cue"><span aria-hidden="true"></span>向下滚动，卡片会随视口渐显</div>
+  </div>
+</section>
+
+<!-- SECTION: concept -->
+<section id="concept">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <span class="kicker">01 / Concept</span>
+      <h2>什么是 <span class="grad">Vibe Coding</span></h2>
+      <p>伴随生成式 AI 兴起的一种新型开发方式：不再逐行手写代码，而是用自然语言描述想要的效果、交互与氛围。</p>
+    </div>
+    <div class="intro-grid">
+      <div class="prose" data-reveal>
+        <p>由 AI（如 Cursor、Bolt、Lovable、Claude 等）生成并迭代代码，开发者负责<strong>把方向、挑审美、调细节</strong>，像"调氛围"一样把产品打磨到满意为止。</p>
+        <p>它把开发者的精力从重复的样板代码，转移到创意、审美与体验决策上。你只需要说清楚"我要一个玻璃拟态的登录卡片，悬停时有渐变光晕"，剩下的 HTML / CSS / React 交给 AI 生成，再用组件库和动效库做锦上添花。</p>
+        <div class="metric">
+          <div><b>自然语言</b><small>替代样板代码</small></div>
+          <div><b>组件库</b><small>拉开质感差距</small></div>
+          <div><b>几轮</b><small>即可收敛到满意</small></div>
+        </div>
+      </div>
+      <div class="quote" data-reveal style="transition-delay:.12s">
+        <div class="big grad">描述意图，<br>而非实现细节</div>
+        <p class="note">风格关键词越具体越好——glassmorphism（玻璃拟态）、neumorphism（新拟态）、gradient（渐变）、dark mode（暗色模式）、3D、微交互。这些正是 Uiverse 等站点沉淀下来的通用风格标签，AI 对其理解度高。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: workflow -->
+<section id="workflow">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <span class="kicker">02 / Workflow</span>
+      <h2>核心工作流：<span class="grad">四步闭环</span></h2>
+      <p>把目标拆成"页面结构 + 视觉风格 + 交互动效"三层，然后进入迭代循环。</p>
+    </div>
+    <div class="flow">
+      <article class="step" data-reveal>
+        <span class="num">STEP 01</span>
+        <h3>用自然语言描述意图</h3>
+        <p>页面结构 + 视觉风格 + 交互动效三层拆开描述，直接引用具体风格关键词。</p>
+        <span class="tag">Prompt</span>
+      </article>
+      <article class="step" data-reveal style="transition-delay:.1s">
+        <span class="num">STEP 02</span>
+        <h3>让 AI 生成初版并跑起来</h3>
+        <p>此阶段追求"能跑起来、大致像"，不纠结像素级细节，先得到可预览的骨架。</p>
+        <span class="tag">Run</span>
+      </article>
+      <article class="step" data-reveal style="transition-delay:.2s">
+        <span class="num">STEP 03</span>
+        <h3>组件库与动效库增强</h3>
+        <p>要现成的按钮、卡片、表单、加载态，去 Uiverse / Aceternity UI / React Bits 直接复制；复杂动效交给 Anime.js。这是拉开质感差距的关键一步。</p>
+        <span class="tag">Enhance</span>
+      </article>
+      <article class="step" data-reveal style="transition-delay:.3s">
+        <span class="num">STEP 04</span>
+        <h3>对照设计灵感反复微调</h3>
+        <p>以 Dribbble、MotionSites 上的优秀案例作为审美参照，对照着微调配色、间距与动效节奏。</p>
+        <span class="tag">Refine</span>
+      </article>
+    </div>
+    <div class="loop" data-reveal>
+      <b>迭代循环：</b><em>看效果</em> → <em>说一句</em> → <em>AI 改</em> → <em>再看</em><b style="margin-left:auto">通常几轮即可收敛</b>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: toolbox -->
+<section id="toolbox">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <span class="kicker">03 / Toolbox</span>
+      <h2>六大参考资源<span class="grad">工具箱</span></h2>
+      <p>鼠标在卡片上移动会有光晕跟随；点击卡片查看它在 Vibe Coding 里的具体用法，点击右下角<b style="color:var(--cyan)">网址按钮</b>直接跳转官网（新标签页打开）。</p>
+    </div>
+    <div class="grid-cards" id="cards">
+
+      <div class="card" role="button" tabindex="0" data-reveal data-key="uiverse">
+        <span class="role">开源组件库</span>
+        <h3>Uiverse</h3>
+        <span class="en">最大的开源 UI 元素库</span>
+        <p class="line">社区共建，收录七千余个可复制界面元素，个人与商业均可免费使用。</p>
+        <div class="tags"><span>MIT 协议</span><span>HTML/CSS</span><span>Tailwind</span><span>React</span><span>Figma</span></div>
+        <div class="foot"><span class="more">查看用法</span><a class="site" href="https://uiverse.io" target="_blank" rel="noopener noreferrer" aria-label="打开 uiverse 官网">uiverse.io</a></div>
+        <span class="card-detail" hidden data-url="https://uiverse.io" data-name="Uiverse" data-en="最大的开源 UI 元素库" data-role="开源组件库 · 拿来即用" data-body="Uiverse 是社区共建的最大开源 UI 元素库，收录七千余个可复制的界面元素，个人与商业均可免费使用（MIT 协议）。元素支持以 HTML/CSS、Tailwind、React 乃至 Figma 形式一键复制，覆盖按钮、卡片、加载器、表单、开关、复选框、工具提示等，并按 glassmorphism、neumorphism、gradient、dark mode、3D、hover 效果等风格标签分类。" data-keys="要一个现成好看组件时的首选素材库|风格标签本身就是喂给 AI 的关键词|支持 HTML/CSS、Tailwind、React、Figma 四种形式复制" data-fix="在 Vibe Coding 中承担"补组件"的角色：AI 生成骨架后，用它替换掉朴素的按钮、卡片和加载态。"></span>
+      </div>
+
+      <div class="card" role="button" tabindex="0" data-reveal style="transition-delay:.08s" data-key="reactbits">
+        <span class="role">动画组件</span>
+        <h3>React Bits</h3>
+        <span class="en">面向创意开发者的动画组件</span>
+        <p class="line">开源、免费、高质量且可完全自定义，收录 110 多个创意组件并持续每月更新。</p>
+        <div class="tags"><span>110+ 组件</span><span>每月更新</span><span>背景工作室</span><span>纹理实验室</span></div>
+        <div class="foot"><span class="more">查看用法</span><a class="site" href="https://reactbits.dev" target="_blank" rel="noopener noreferrer" aria-label="打开 reactbits 官网">reactbits.dev</a></div>
+        <span class="card-detail" hidden data-url="https://reactbits.dev" data-name="React Bits" data-en="面向创意开发者的动画 React 组件集合" data-role="动画组件 · 眼前一亮" data-body="React Bits 是一套开源、免费、高质量且可完全自定义的动画 React 组件集合，收录 110 多个创意组件并持续每月更新，支持多种技术栈变体。它还提供背景工作室、形状魔法（内圆角形状）、纹理实验室（噪点、半色调、ASCII 艺术）等实用工具。" data-keys="适合 React 项目快速加入动效背景与交互组件|背景工作室 / 形状魔法 / 纹理实验室三件套|可完全自定义，不必接受默认样式" data-fix="页面"动起来但不重"的首选：把动态背景、渐显文字这类需求交给它，不用手写关键帧。"></span>
+      </div>
+
+      <div class="card" role="button" tabindex="0" data-reveal style="transition-delay:.16s" data-key="aceternity">
+        <span class="role">落地页组件库</span>
+        <h3>Aceternity UI</h3>
+        <span class="en">落地页级的 React + Tailwind 组件库</span>
+        <p class="line">200 多个可直接复制的生产级组件、区块（Blocks）与整页模板，复制即用。</p>
+        <div class="tags"><span>200+ 组件</span><span>Tailwind CSS</span><span>Motion</span><span>整页模板</span></div>
+        <div class="foot"><span class="more">查看用法</span><a class="site" href="https://ui.aceternity.com" target="_blank" rel="noopener noreferrer" aria-label="打开 aceternity 官网">ui.aceternity.com</a></div>
+        <span class="card-detail" hidden data-url="https://ui.aceternity.com" data-name="Aceternity UI" data-en="落地页级的 React + Tailwind 组件库" data-role="落地页组件库 · 整页可抄" data-body="Aceternity UI 是面向落地页场景的 React 组件库，提供 200 多个可直接复制的生产级组件、区块（Blocks）与整页模板，基于 Tailwind CSS 与 Motion 构建，复制即用、无需再为动画和样式费力调校，已被大量开发者与创业者用于快速搭建 SaaS、AI 产品、设计工作室等高质量落地页。" data-keys="组件、区块、整页模板三个粒度可用|基于 Tailwind CSS 与 Motion，动画已内置|大量 SaaS / AI 产品落地页的实际选择" data-fix="当 AI 生成的页面"结构像但没质感"时，用它的一个 Hero 或 Blocks 直接换掉整段首屏。"></span>
+      </div>
+
+      <div class="card" role="button" tabindex="0" data-reveal style="transition-delay:.24s" data-key="animejs">
+        <span class="role">动画引擎</span>
+        <h3>Anime.js</h3>
+        <span class="en">轻量而强大的 JavaScript 动画引擎</span>
+        <p class="line">快速、多用途且轻量（核心约 24.5KB），模块化 API 按需引入。</p>
+        <div class="tags"><span>~24.5KB</span><span>Timeline</span><span>SVG 描线</span><span>Stagger</span><span>Spring</span></div>
+        <div class="foot"><span class="more">查看用法</span><a class="site" href="https://animejs.com" target="_blank" rel="noopener noreferrer" aria-label="打开 animejs 官网">animejs.com</a></div>
+        <span class="card-detail" hidden data-url="https://animejs.com" data-name="Anime.js" data-en="轻量而强大的 JS 动画引擎" data-role="动画引擎 · 底层控制" data-body="Anime.js 是一款快速、多用途且轻量（核心约 24.5KB）的 JS 动画库，采用模块化 API，按需引入。它提供直观的统一 API、增强的 CSS 变换、时间轴编排（Timeline）、SVG 工具集（形状形变、描线、运动路径）、进阶交错（Stagger）、可拖拽与弹性（Spring/Draggable）以及滚动观察（Scroll Observer）等能力。" data-keys="时间轴编排：多段动效按顺序串起来|SVG 工具集：形状形变、描线、运动路径|交错 Stagger + 弹性 Spring + 滚动观察" data-fix="实现复杂、细腻网页动效的底层引擎，可与组件库搭配补足高级交互——组件库给形，Anime.js 给律动。"></span>
+      </div>
+
+      <div class="card" role="button" tabindex="0" data-reveal style="transition-delay:.32s" data-key="motionsites">
+        <span class="role">提示词弹药库</span>
+        <h3>MotionSites</h3>
+        <span class="en">面向 AI 建站的高质量提示词与模板库</span>
+        <p class="line">可直接复制的 AI 建站提示词与模板，主张"复制、粘贴、上线"。</p>
+        <div class="tags"><a href="https://lovable.dev" target="_blank" rel="noopener noreferrer">Lovable</a><a href="https://bolt.new" target="_blank" rel="noopener noreferrer">Bolt</a><a href="https://cursor.com" target="_blank" rel="noopener noreferrer">Cursor</a><a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude</a><span>数千套</span></div>
+        <div class="foot"><span class="more">查看用法</span><a class="site" href="https://motionsites.ai" target="_blank" rel="noopener noreferrer" aria-label="打开 motionsites 官网">motionsites.ai</a></div>
+        <span class="card-detail" hidden data-url="https://motionsites.ai" data-name="MotionSites" data-en="面向 AI 建站的高质量提示词与模板库" data-role="提示词弹药库 · 一句话起盘" data-body="MotionSites 提供可直接复制的 AI 建站提示词与模板，适配 Lovable、Bolt、Cursor、Claude 等主流 AI 编码工具，主张"复制、粘贴、上线"。其资产库按按钮、卡片、加载器、Hero、表单、定价、CSS 特效、着色器等数十种类型分类，收录数千套风格化提示词与区块，帮助用户用一句话提示词快速生成具有 3D 与动效质感的高质量落地页。" data-keys="适配 Lovable / Bolt / Cursor / Claude 等主流工具|按按钮、卡片、Hero、表单、定价等数十种类型分类|"复制、粘贴、上线"的用法" data-fix="Vibe Coding 中"提示词工程"的现成弹药库：起盘阶段直接借它的描述，省掉从零想措辞。"></span>
+      </div>
+
+      <div class="card" role="button" tabindex="0" data-reveal style="transition-delay:.4s" data-key="dribbble">
+        <span class="role">审美基准</span>
+        <h3>Dribbble</h3>
+        <span class="en">全球设计灵感社区</span>
+        <p class="line">汇聚大量设计师发布的界面、交互动效与品牌视觉作品，本身不直接提供代码。</p>
+        <div class="tags"><span>UI/UX 灵感</span><span>动效参考</span><span>配色基准</span></div>
+        <div class="foot"><span class="more">查看用法</span><a class="site" href="https://dribbble.com" target="_blank" rel="noopener noreferrer" aria-label="打开 dribbble 官网">dribbble.com</a></div>
+        <span class="card-detail" hidden data-url="https://dribbble.com" data-name="Dribbble" data-en="全球设计与 UI/UX 灵感社区" data-role="审美基准 · 定义目标" data-body="Dribbble 是全球知名的设计与 UI/UX 灵感社区，汇聚大量设计师发布的界面、交互动效与品牌视觉作品。它本身不直接提供代码，但在 Vibe Coding 中扮演"审美基准"的角色：在动手生成或调氛围之前，先找到心仪的版式、配色与动效参考，把"想要的感觉"具象化，再据此向 AI 描述。" data-keys="不提供代码，提供"要成什么样"的判断标准|先定版式、配色、动效节奏，再向 AI 描述|显著提升成品的视觉水准" data-fix="把它当作验收标准：每次 AI 改完，对照参考图判断"氛围到位了没有"。"></span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: stack -->
+<section id="stack">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <span class="kicker">04 / Stack</span>
+      <h2>推荐<span class="grad">技术栈组合</span></h2>
+      <p>四类资源各司其职，串成一条从灵感到上线的流水线。</p>
+    </div>
+    <div class="stack">
+      <div class="layer" data-reveal>
+        <div class="lname">审美与灵感<small>Define</small></div>
+        <div class="items"><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble 版式与配色基准</a><a href="https://motionsites.ai" target="_blank" rel="noopener noreferrer">MotionSites 风格化区块</a></div>
+      </div>
+      <div class="layer" data-reveal style="transition-delay:.08s">
+        <div class="lname">AI 编码主力<small>Generate</small></div>
+        <div class="items"><span>Cursor</span><span>Bolt</span><span>Lovable</span><span>Claude</span></div>
+      </div>
+      <div class="layer" data-reveal style="transition-delay:.16s">
+        <div class="lname">组件层<small>Assemble</small></div>
+        <div class="items"><a href="https://ui.aceternity.com" target="_blank" rel="noopener noreferrer">Aceternity UI（React）</a><a href="https://reactbits.dev" target="_blank" rel="noopener noreferrer">React Bits（React）</a><a href="https://uiverse.io" target="_blank" rel="noopener noreferrer">Uiverse（纯 CSS / Tailwind 通用）</a></div>
+      </div>
+      <div class="layer" data-reveal style="transition-delay:.24s">
+        <div class="lname">动效层<small>Animate</small></div>
+        <div class="items"><a href="https://animejs.com" target="_blank" rel="noopener noreferrer">Anime.js 官网</a><span>滚动视差</span><span>SVG 描线</span><span>时间轴编排</span><span>弹性交互</span></div>
+      </div>
+      <div class="layer" data-reveal style="transition-delay:.32s">
+        <div class="lname">提示词起盘<small>Prompt</small></div>
+        <div class="items"><a href="https://motionsites.ai" target="_blank" rel="noopener noreferrer">MotionSites 提示词生成落地页骨架</a><a href="https://animejs.com" target="_blank" rel="noopener noreferrer">Anime.js 补足高级交互</a></div>
+      </div>
+    </div>
+    <div class="head" data-reveal style="margin:60px 0 10px">
+      <span class="kicker">04b / Steps</span>
+      <h2 style="font-size:clamp(1.4rem,3.4vw,2rem)">落地步骤</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl" data-reveal><div class="dot">1</div><div class="txt"><b>定风格与灵感</b> —— 先在 Dribbble / MotionSites 上把"想要的感觉"具象化。</div></div>
+      <div class="tl" data-reveal style="transition-delay:.08s"><div class="dot">2</div><div class="txt"><b>生成首版落地页</b> —— 用 MotionSites 提示词让 AI 产出可预览的骨架。</div></div>
+      <div class="tl" data-reveal style="transition-delay:.16s"><div class="dot">3</div><div class="txt"><b>替换关键组件</b> —— 从 Uiverse / Aceternity / React Bits 复制按钮、卡片、Hero、表单。</div></div>
+      <div class="tl" data-reveal style="transition-delay:.24s"><div class="dot">4</div><div class="txt"><b>注入动效</b> —— 用 Anime.js 加入滚动视差与微交互。</div></div>
+      <div class="tl" data-reveal style="transition-delay:.32s"><div class="dot">5</div><div class="txt"><b>对照微调</b> —— 反复"说一句、改一版"，直到氛围到位。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: prompts -->
+<section id="prompts">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <span class="kicker">05 / Prompt & Pitfalls</span>
+      <h2>高效提示词要点与<span class="grad">避坑建议</span></h2>
+      <p>要点是"分层 + 具体 + 可对照"：先给整体风格与目标用户，再分模块描述结构、配色、字体与动效。</p>
+    </div>
+    <div class="two">
+      <div class="panel" data-reveal>
+        <h3 class="grad">要做的事</h3>
+        <ul class="ul">
+          <li><span class="mark ok">＋</span><div><b>分层描述</b>整体风格 → 目标用户 → 结构 / 配色 / 字体 / 动效，逐模块展开。</div></li>
+          <li><span class="mark ok">＋</span><div><b>引用风格关键词</b>直接写 glassmorphism、dark mode、3D，或直接贴参考链接与截图。</div></li>
+          <li><span class="mark ok">＋</span><div><b>一次只迭代一个明确目标</b>便于 AI 精准改动，也便于你验证效果。</div></li>
+        </ul>
+      </div>
+      <div class="panel" data-reveal style="transition-delay:.1s">
+        <h3 class="grad">要避的坑</h3>
+        <ul class="ul">
+          <li><span class="mark no">！</span><div><b>别一次塞入过多冲突要求</b>会让 AI 顾此失彼。</div></li>
+          <li><span class="mark no">！</span><div><b>别忽视性能</b>3D 与重型动效要按需引入，注意移动端体验。</div></li>
+          <li><span class="mark no">！</span><div><b>别盲信生成代码</b>关键交互与无障碍（对比度、键盘可达）需人工复核。</div></li>
+          <li><span class="mark no">！</span><div><b>别把组件库当黑盒</b>与设计不符时回到组件源码微调，才能真正调出自己的氛围。</div></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="composer" data-reveal>
+      <h3>提示词<span class="grad">速配器</span></h3>
+      <p class="hint">按"分层 + 具体 + 可对照"现拼一段可直接丢给 AI 的描述——点选风格标签、模块与动效，右侧文案实时更新，可直接复制。</p>
+
+      <div class="group">
+        <div class="gl">风格标签</div>
+        <div class="opts" id="gStyle">
+          <button class="opt" type="button" aria-pressed="true">glassmorphism</button>
+          <button class="opt" type="button" aria-pressed="true">dark mode</button>
+          <button class="opt" type="button" aria-pressed="true">gradient</button>
+          <button class="opt" type="button" aria-pressed="false">neumorphism</button>
+          <button class="opt" type="button" aria-pressed="false">3D</button>
+          <button class="opt" type="button" aria-pressed="false">微交互</button>
+        </div>
+      </div>
+      <div class="group">
+        <div class="gl">模块类型</div>
+        <div class="opts" id="gModule">
+          <button class="opt" type="button" aria-pressed="true">Hero 首屏</button>
+          <button class="opt" type="button" aria-pressed="false">资源卡片网格</button>
+          <button class="opt" type="button" aria-pressed="false">工作流步骤条</button>
+          <button class="opt" type="button" aria-pressed="false">定价表</button>
+          <button class="opt" type="button" aria-pressed="false">表单</button>
+          <button class="opt" type="button" aria-pressed="false">加载态</button>
+        </div>
+      </div>
+      <div class="group">
+        <div class="gl">动效注入</div>
+        <div class="opts" id="gMotion">
+          <button class="opt" type="button" aria-pressed="true">滚动渐显</button>
+          <button class="opt" type="button" aria-pressed="true">鼠标跟随光晕</button>
+          <button class="opt" type="button" aria-pressed="false">打字机标题</button>
+          <button class="opt" type="button" aria-pressed="false">SVG 描线</button>
+          <button class="opt" type="button" aria-pressed="false">时间轴编排</button>
+          <button class="opt" type="button" aria-pressed="false">弹性交错入场</button>
+        </div>
+      </div>
+
+      <div class="out" id="out" aria-live="polite"></div>
+      <div class="out-row">
+        <button class="btn p" type="button" id="copyBtn" data-primary-action>复制这段提示词</button>
+        <button class="btn g" type="button" id="resetBtn">只保留推荐项</button>
+        <span class="count" id="count"></span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- SECTION: footer -->
+<footer>
+  <div class="wrap">
+    <div data-reveal>
+      <span class="kicker">06 / Closing</span>
+      <p class="final" style="margin-top:14px">让 AI 承担繁琐的实现，<span class="l2 grad">让开发者回归创意与审美。</span></p>
+      <p class="f-sub">把 Uiverse、React Bits、Aceternity UI、Anime.js、MotionSites 这些现成的组件、动效与提示词资源，和 Dribbble 的设计灵感串联成一条工作流，你就能以更低的成本、更快的节奏，做出既好看又好玩的现代网页。先描述，再生成，再调氛围——这就是 Vibe Coding。</p>
+      <div class="f-meta">
+        <span>依据《Vibe Coding 实战指南》整理生成</span><span class="sep">·</span>
+        <span>结构与样式、脚本分离的三文件版</span><span class="sep">·</span>
+        <span>无外部 CDN / 字体依赖</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SECTION: drawer markup -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle" aria-hidden="true">
+  <div class="dtop">
+    <div>
+      <div class="drole" id="dRole"></div>
+      <h3 id="dTitle"></h3>
+      <div class="den" id="dEn"></div>
+      <a class="dlink" id="dLink" href="#" target="_blank" rel="noopener noreferrer"></a>
+    </div>
+    <button class="close" type="button" id="dClose" aria-label="关闭详情">✕</button>
+  </div>
+  <p class="dbody" id="dBody"></p>
+  <ul class="dkeys" id="dKeys"></ul>
+  <div class="dfix" id="dFix"></div>
+</aside>
+<button class="top" type="button" id="toTop" aria-label="回到顶部">↑</button>
+
+</body>
+</html>
